@@ -4,7 +4,7 @@
   width: 300px;
   height: 200px;
   background-color: grey;
-  border: red solid 10px;
+  border: rgb(151, 84, 59) solid 10px;
   margin-top: 0px;
   margin-bottom: 0px;
   border-radius: 40px;
@@ -18,7 +18,7 @@
   background-color: grey;
   margin-top: 20px;
   margin-bottom: 0px;
-  border: red solid 10px;
+  border: rgb(151, 84, 59) solid 10px;
   border-radius: 40px;
   font-weight: bold;
 }
@@ -68,7 +68,7 @@ h2 {
   height: 150px;
   top: 100%;
   margin-top: 0px;
-  background-color: orange;
+  background-color: coral;
   display: grid;
   align-items: center;
 }
