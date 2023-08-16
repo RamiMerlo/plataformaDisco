@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;600;700;800;900&display=swap%22");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: burlywood;
+
+  font-family: "Work Sans", sans-serif;
+}
+
+#albumRegister {
+  margin: 10vh auto 35vh auto;
+  width: 500px;
+  height: 500px;
+  background-color: #b4b4b4;
+  border: #6d6d6d solid 5px;
+  border-radius: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#albumRegister h1 {
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-decoration: underline orange;
+  padding-bottom: 10px;
+}
+
+#albumRegister input {
+  margin: 10px;
+  font-weight: bold;
+}
+
+#albumRegister #albumSubmit {
+  align-self: center;
+}

@@ -166,9 +166,9 @@ header {
 }
 
 #albumRegister {
-  margin: 0 auto;
-  width: 640px;
-  height: 350px;
+  margin: auto;
+  width: 300px;
+  height: 200px;
   background-color: #b4b4b4;
   border: #6d6d6d solid 5px;
   border-radius: 40px;
@@ -177,25 +177,8 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center;
-  margin: 0;
-  position: absolute;
-  right: 35%;
-  top: 40%;
-  transform: translateY(-50%);
-}
-
-#albumRegister h1 {
-  position: absolute;
-  top: 0%;
 }
 
 #descripcion {
   height: 50px;
-}
-
-#albumRegister input {
-  margin: 0px auto;
-  margin-bottom: 10px;
-  top: 50%;
 }
