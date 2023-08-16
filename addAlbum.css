@@ -14,7 +14,7 @@ body {
 
 #albumRegister {
   margin: 10vh auto 35vh auto;
-  width: 500px;
+  width: 450px;
   height: 500px;
   background-color: #b4b4b4;
   border: #6d6d6d solid 5px;
@@ -24,6 +24,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 5px;
 }
 
 #albumRegister h1 {
