@@ -3,17 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Nuevo Album</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./images/logo.jpg" />
   </head>
   <body>
-    <div><h1>Nuevo album</h1></div>
+    <div id="albumRegister">
+      <h1>Nuevo album</h1>
     <form action="https://formsubmit.co/f39ab1b57edf75dde2c1b1385e82ae50" method="post">
       <label for="tituloAlbum"
-        >Titulo <input type="text" name="Titulo de la cancion" placeholder="Titulo del album" required
+        >Titulo   <input type="text" name="Titulo de la cancion" placeholder="Titulo del album" required
       /></label>
       <br />
       <label for="añoLanzamiento"
-        ><input type="date" name="Fecha de lanzamiento" placeholder="Fecha" required
+        > Fecha de lanzamiento   <input type="date" name="Fecha de lanzamiento" placeholder="Fecha" required
       /></label>
       <br />
       <label for="descripcion">
@@ -24,18 +27,18 @@
           rows="10"
           style="resize: none"
           name="Descripcion de la cancion"
-          placeholder="Descripcion"
-          required
+          placeholder="Agregue una descripcion si asi lo desea"
         ></textarea>
       </label>
       <br />
-      <label for="Imagen"> <input type="file" name="Imagen" placeholder="Seleccione la portada"/></label> <br />
+      <label for="Imagen"> Adjuntar archivo <input type="file" name="Imagen" placeholder="Seleccione la portada"/></label> <br />
       <label for="Terminos"></label>
         Esta de acuerdo con los
         <a href="./Terminos.html">Terminos y condiciones?</a
-        ><input type="checkbox" required name="Terminos"
+        > <input type="checkbox" required name="Terminos"
       /></label> <br>
       <input type="submit">
     </form>
+  </div>
   </body>
 </html>
