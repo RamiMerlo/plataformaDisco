@@ -40,3 +40,9 @@ body {
   margin: 10px;
   font-weight: bold;
 }
+
+#albumSubmit {
+  position: relative;
+  top: -5px;
+  left: 132.5px;
+}
