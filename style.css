@@ -491,3 +491,7 @@ svg {
   fill: black;
   transition: fill 1s 0.1s ease;
 }
+
+#contacto a {
+  text-decoration: none;
+}
