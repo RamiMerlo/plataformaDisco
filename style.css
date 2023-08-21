@@ -1,9 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;600;700;800;900&display=swap%22");
 
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 970px) {
+  body {
+    #Titulito h1 {
+      top: 10px;
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    }
+
+    #registerButton {
+      height: 30px;
+      width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+    #registerText {
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  body {
+    #contactButtonsImages {
+      flex-direction: column;
+    }
+
+    #h1Contacto {
+      bottom: 0px;
+    }
+  }
 }
 
 @media screen and (max-width: 570px) {
@@ -16,9 +51,27 @@
     }
     #Titulito h1 {
       margin-top: 10px;
+      font-size: 50px;
+    }
+
+    #artistasDiv {
+      flex-direction: column;
     }
   }
 }
+
+@media screen and (max-width: 330px) {
+  body {
+    #Titulito h1 {
+      font-size: 35px;
+    }
+  }
+}
+
+#artistasDiv {
+  display: flex;
+}
+
 .card {
   display: flex;
   position: relative;
@@ -27,7 +80,11 @@
   background-color: #22181c;
   color: white;
   flex-direction: column;
-  border: #22181c solid 2px;
+  border: 2px solid transparent;
+  border-image: linear-gradient(45deg, #00ff00, #33ff33);
+  border-image-slice: 1;
+  box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00,
+    0 0 40px #00ff00;
 }
 
 .list-group-item {
@@ -55,6 +112,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 100px;
 }
 
 #downCardBody {
@@ -62,6 +120,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  height: 50px;
 }
 
 .newLoguitos {
@@ -79,34 +138,6 @@
 #newLoguitoSpoti {
   margin-right: 0px;
   right: 50px;
-}
-
-#dukiGeneral {
-  margin: 20px auto;
-  width: 300px;
-  height: 200px;
-  background-color: #b4b4b4;
-  border: #6d6d6d solid 5px;
-  border-radius: 40px;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-#ysyGeneral {
-  margin: 20px auto;
-  width: 300px;
-  height: 200px;
-  background-color: #b4b4b4;
-  border: #6d6d6d solid 5px;
-  border-radius: 40px;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .ogH1 {
@@ -129,7 +160,7 @@ li {
 }
 
 body {
-  background-color: #deb887;
+  background-color: black;
 
   font-family: "Work Sans", sans-serif;
 }
@@ -144,22 +175,6 @@ body {
   text-decoration: underline;
 }
 
-#dukiGeneral .Boton {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  background-color: #c8c8c8;
-  border: 2px solid #6d6d6d;
-  padding: 1px;
-}
-
-#ysyGeneral .Boton {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  background-color: #c8c8c8;
-  border: 2px solid #6d6d6d;
-  padding: 1px;
-}
-
 ol {
   margin-top: 0;
   list-style: none;
@@ -167,24 +182,24 @@ ol {
 
 .ogH2 {
   position: relative;
-  color: black;
+  color: #003600;
   text-align: center;
   margin: 15px;
   z-index: -1;
-  text-decoration: underline black;
+  font-family: "Metal Mania", cursive;
+  font-size: 40px;
 }
 
 #Titulito {
-  position: fixed;
   width: 100%;
-  height: 150px;
+  height: 200px;
   top: 0%;
   margin-top: 0px;
-  background-color: coral;
+  background: linear-gradient(to bottom, #003600, transparent 90%, #000000);
   display: grid;
   align-items: center;
   transform: translateZ(0px);
-  z-index: 10;
+  z-index: 1;
 }
 
 #Titulito h1 {
@@ -192,7 +207,10 @@ ol {
   justify-content: center;
   align-items: center;
   text-align: center;
-  top: -20px;
+  top: -60px;
+  font-family: "Metal Mania", cursive;
+  text-decoration: none;
+  font-size: 60px;
 }
 
 #opciones {
@@ -214,7 +232,11 @@ header {
 }
 
 #albumPropio {
+  margin-top: 30px;
   font-size: 30px;
+  color: white;
+  font-family: "Metal Mania", cursive;
+  text-decoration: none;
 }
 #opciones .Boton {
   margin: 5px auto;
@@ -224,6 +246,10 @@ header {
   border: 2px solid #6d6d6d;
   width: 50px;
   height: 50px;
+}
+
+#registerText {
+  color: black;
 }
 
 #divRegister {
@@ -287,13 +313,27 @@ header {
 }
 
 #contacto {
+  display: flex;
   height: 400px;
-  margin-top: 10px;
-  background-color: #ad8b5c;
+  background: linear-gradient(to top, #003600, transparent 70%, #000000);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+#h1Contacto {
+  position: relative;
+  color: white;
+  font-family: "Metal Mania", cursive;
+  bottom: 100px;
+  font-size: 60px;
+  text-decoration: none;
+}
+
+#contactButtonsImages {
+  display: flex;
+  flex-direction: row;
 }
 
 .contactIcons {
@@ -377,7 +417,7 @@ header {
 #instagramIcon {
   background-color: #3c3c3c;
   position: relative;
-  padding: 5px 15px;
+  /* padding: 5px 15px; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,6 +437,12 @@ header {
   transition: color 1s 0.1s ease-out;
   text-align: center;
   width: 155.8px;
+  height: 59.5px;
+}
+#instagramIcon svg {
+  position: relative;
+  left: 10px;
+  margin-right: 10px;
 }
 
 #instagramIcon span {
@@ -506,7 +552,7 @@ header {
   background-color: #3c3c3c;
   position: relative;
   padding: 5px 15px;
-  height: 54px;
+  height: 59.5px;
   width: 155.88px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -599,4 +645,175 @@ a {
 
 #nav {
   width: 40px;
+}
+
+#registerButton {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  outline: none;
+  border-radius: 50px;
+  background-color: rgba(255, 0, 0, 1);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  margin-bottom: 50px;
+  margin: 30px;
+  border: 2px;
+  border-image: linear-gradient(45deg, #ff0000, #ff3333);
+  border-image-slice: 1;
+  box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000,
+    0 0 40px #ff0000;
+  text-align: center;
+  text-decoration: solid;
+  z-index: 1;
+}
+
+#registerButton:hover {
+  background-color: #00ff00;
+  border: 2px;
+  border-image: linear-gradient(45deg, #00ff00, #33ff33);
+  border-image-slice: 1;
+  box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00,
+    0 0 40px #00ff00;
+}
+
+#registerButton .text {
+  position: relative;
+  z-index: 2;
+}
+
+#circleConteinerRegister {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#circleRegister {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background-color: black;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+
+#registerButton:hover #circleRegister {
+  width: 200%;
+  height: 200%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+}
+
+#registerButton:focus {
+  box-shadow: 0 0 0 2px black;
+  outline: none;
+}
+
+#registerButton.animated #circleRegister {
+  animation: pulse 1s infinite;
+}
+#addAlbumButton {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  outline: none;
+  border-radius: 50px;
+  background-color: rgba(255, 0, 0, 1);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  margin-bottom: 50px;
+  margin: 30px;
+  border: 2px;
+  border-image: linear-gradient(45deg, #ff0000, #ff3333);
+  border-image-slice: 1;
+  box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000,
+    0 0 40px #ff0000;
+  text-align: center;
+  text-decoration: solid;
+  z-index: 1;
+}
+
+#addAlbumButton:hover {
+  background-color: #00ff00;
+  border: 2px;
+  border-image: linear-gradient(45deg, #00ff00, #33ff33);
+  border-image-slice: 1;
+  box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00,
+    0 0 40px #00ff00;
+}
+
+#addAlbumButton .text {
+  position: relative;
+  z-index: 2;
+}
+
+#circleConteinerRegister {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#registerContainer {
+  display: flex;
+}
+
+#circleRegister {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background-color: black;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+
+#addAlbumButton:hover #circleRegister {
+  width: 200%;
+  height: 200%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+}
+
+#addAlbumButton:focus {
+  box-shadow: 0 0 0 2px black;
+  outline: none;
+}
+
+#addAlbumButton.animated #circleRegister {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(250, 215, 121, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(250, 215, 121, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(250, 215, 121, 0);
+  }
 }

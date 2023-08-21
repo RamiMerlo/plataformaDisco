@@ -10,9 +10,15 @@
     <link rel="stylesheet" href="./style.css" /> 
   </head>
   <body>
-
-    <header> <a href="./signUp.html"> <button id="newAccount" class="ogButtons">Crea una cuenta</button></a></header>
-    <div id="titulitoPlaceHolder" class="ogDivs"></div>
+<div id="registerContainer">
+    <header>
+      <button class="button" id="registerButton">
+      <span class="text" id="registerText">Crear cuenta</span>
+      <div class="circle-container" id="circleConteinerRegister">
+        <div class="circle" id="circleRegister"></div>
+      </div>
+    </button></a></header></div>
+    <!-- <div id="titulitoPlaceHolder" class="ogDivs"></div> -->
     <div id="Titulito" class="ogDivs" >
       <nav class="navbar navbar-light bg-light" id="nav" style="--bs-bg-opacity: 0;">
         <div class="container">
@@ -21,15 +27,14 @@
           </a>
         </div>
       </nav>
-      <header> <a href="./signUp.html"> <button class="ogButtons">Crea una cuenta</button></a></header>
       <h1 class="ogH1">Musica urbana argentina</h1>
     </div>
-    <h2 class="ogH2">Los 2 artistas mas importantes son:</h2>
+    <h2 class="ogH2">Grandes referentes </h2> 
+    <div id="artistasDiv">
     <div class="card" style="width: 18rem; margin: 40px auto;">
       <img src="./images/duko.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Mauro "Duki" Lombardo</h5>
-        <p class="card-text">Duki fue fundamental en la historia musical argentina al impulsar la popularidad del rap y el trap, fusionando estilos y atrayendo a la juventud. Sus éxitos comerciales y su enfoque innovador contribuyeron a diversificar y modernizar la escena musical del país.</p>
+        <h5 class="card-title">"Duki"</h5>
       </div>
       <h5 style="padding: 8px 16px;">Mayores hits:</h5>
       <ul class="list-group list-group-flush">
@@ -45,8 +50,7 @@
     <div class="card" style="width: 18rem;margin: 40px auto;" >
       <img src="./images/ysy.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Alejo "Ysy A" Acosta</h5>
-        <p class="card-text">YSY A dejó una marca importante en la historia musical del país al elevar el género del trap y el rap y hacerlo llegar todo publico. YSY A trascendió las fronteras musicales convencionales con su capacidad para transmitir emociones genuinas y narrativas sinceras a través de su música.</p>
+        <h5 class="card-title">"Ysy A"</h5>
       </div>
       <h5 style="padding: 8px 16px;">Mayores hits:</h5>
       <ul class="list-group list-group-flush">
@@ -59,14 +63,22 @@
         <a href="https://www.youtube.com/@ysy__a" target="_blank" id="card-link-yt"><img src="./images/logoYoutube.png" alt="" class="newLoguitos" id="newLoguitoYT"></a>
       </div>
     </div>
+  </div>
     <h1 id="albumPropio" class="ogH1">Desea subir su propia portada de un album?</h1>
     <br />
     <div id="opciones" class="ogDivs">
-      <a href="./addAlbum.html" ><button class="Boton"> Si</button></a>
-      <a href="#titulitoPlaceHolder" "><button class="Boton">No</button></a>
+      <a href="./addAlbum.html">
+      <button class="button" id="addAlbumButton">
+      <span class="text" id="registerText">Click Aqui!</span>
+      <div class="circle-container" id="circleConteinerRegister">
+        <div class="circle" id="circleRegister"></div>
+      </div>
+    </button>
     </div>
+  </a>
     <div id="contacto" class="ogDivs">
       <h1 id="h1Contacto" class="ogH1">Contacto</h1>
+      <div id="contactButtonsImages">
       <a href="https://discordapp.com/users/672918393585926154" target="_blank"><button id="discordIcon" class="ogButtons">
         <svg viewBox="0 0 16 16" class="bi bi-discord" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
          <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"></path>
@@ -88,7 +100,7 @@
 
         <span>Whatsapp</span>
     </button></a>
-
+  </div>
     </div>
     <!-- <div id="linea"></div> -->
   </body>
