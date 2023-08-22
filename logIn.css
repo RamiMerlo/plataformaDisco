@@ -8,6 +8,14 @@
   box-sizing: border-box;
 }
 
+@media screen and (max-height: 690px) {
+  body {
+    #logInForm {
+      margin-bottom: 30px;
+    }
+  }
+}
+
 body {
   background-color: black;
   display: flex;
@@ -28,23 +36,24 @@ body {
 }
 
 #formContainer {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  top: 150px;
 }
 
 #logInForm {
   position: relative;
-  height: 500px;
   width: 80%;
   max-width: 500px;
-  top: 150px;
   border: 2px transparent;
   border-radius: 40px;
   border-image: linear-gradient(45deg, #00ff00, #33ff33);
   border-image-slice: 1;
   box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00,
     0 0 40px #00ff00;
+  margin-bottom: 30px;
 }
 form {
   --bg-light: #efefef;
@@ -71,6 +80,7 @@ form input[type="password"] {
   border-radius: 0.5rem;
   padding: 1rem 0.75rem;
   width: 90%;
+  max-width: 450px;
   border: none;
   display: flex;
   align-items: center;
@@ -104,7 +114,7 @@ form .submit {
   transition: all 300ms;
   font-weight: 600;
   font-size: 0.9rem;
-  margin-right: 40px;
+  margin: 20px auto;
 }
 
 form .submit:hover {
@@ -116,6 +126,7 @@ form .submit:hover {
 .span {
   text-decoration: none;
   color: var(--bg-dark);
+  margin: 5px 20px;
 }
 
 .span a {

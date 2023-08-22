@@ -17,7 +17,7 @@
 
     #registerButton {
       height: 30px;
-      width: 150px;
+      width: fit-content;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -661,23 +661,22 @@ a {
   transition: background-color 0.3s ease;
   margin-bottom: 50px;
   margin: 30px;
-  border: 2px;
+  border: 1px;
   border-image: linear-gradient(45deg, #ff0000, #ff3333);
   border-image-slice: 1;
-  box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000,
-    0 0 40px #ff0000;
+  box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000,
+    0 0 20px #ff0000;
   text-align: center;
   text-decoration: solid;
   z-index: 1;
 }
-
 #registerButton:hover {
   background-color: #00ff00;
   border: 2px;
   border-image: linear-gradient(45deg, #00ff00, #33ff33);
   border-image-slice: 1;
-  box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00,
-    0 0 40px #00ff00;
+  box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00,
+    0 0 20px #00ff00;
 }
 
 #registerButton .text {
