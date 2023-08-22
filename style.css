@@ -78,7 +78,7 @@
   background-color: #22181c;
   color: white;
   flex-direction: column;
-  border: 2px solid transparent;
+  border: 2px transparent;
   border-image: linear-gradient(45deg, #00ff00, #33ff33);
   border-image-slice: 1;
   box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00,
