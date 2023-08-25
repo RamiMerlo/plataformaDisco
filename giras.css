@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;600;700;800;900&display=swap%22");
+
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 881px) {
+  body {
+    #fechasGira {
+      flex-direction: column-reverse;
+    }
+  }
+}
+@media screen and (max-width: 440px) {
+  body {
+    #fechasFila1,
+    #fechasFila2 {
+      flex-direction: column-reverse;
+    }
+  }
+}
+body {
+  background-color: black;
+  font-family: "Work Sans", sans-serif;
+}
+#Titulito {
+  width: 100%;
+  height: 200px;
+  top: 0%;
+  margin-top: 0px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  transform: translateZ(0px);
+  z-index: 1;
+}
+
+#fechasGira {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+#fechasFila1,
+#fechasFila2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+h1 {
+  position: relative;
+  color: black;
+  width: fit-content;
+  padding: 10px;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  text-align: center;
+  font-family: "Metal Mania", cursive;
+  text-decoration: none;
+  font-size: 60px;
+  border-radius: 40px;
+  text-shadow: 2px 2px 4px white;
+  letter-spacing: 5px;
+  box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff,
+    0 0 40px #ffffff;
+}
+.conteinerFecha {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px;
+  border-radius: 10px;
+  margin-right: 60px;
+  margin-left: 60px;
+  height: 100px;
+  width: 100px;
+  min-width: 100px;
+
+  min-height: 100px;
+
+  background-color: #00ff00;
+  box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00,
+    0 0 40px #00ff00;
+  transition: width 0.3s, height 0.3s;
+}
+
+.conteinerFecha:hover {
+  width: 150px;
+  height: 150px;
+  .fecha {
+    top: 50px;
+  }
+
+  .lugar {
+    top: 15px;
+  }
+}
+
+.fecha {
+  position: relative;
+  top: 20px;
+  font-size: 40px;
+}
+.lugar {
+  position: relative;
+  top: 5px;
+}
+a {
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
+}
+
+#addAlbumButton {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  outline: none;
+  border-radius: 50px;
+  background-color: rgba(255, 0, 0, 1);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  margin-bottom: 50px;
+  margin: 30px;
+  border: 2px;
+  border-image: linear-gradient(45deg, #ff0000, #ff3333);
+  border-image-slice: 1;
+  box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000,
+    0 0 40px #ff0000;
+  text-align: center;
+  text-decoration: solid;
+  z-index: 1;
+}
+
+#addAlbumButton:hover {
+  color: black;
+  background-color: #00ff00;
+  border: 2px;
+  border-image: linear-gradient(45deg, #00ff00, #33ff33);
+  border-image-slice: 1;
+  box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00,
+    0 0 40px #00ff00;
+}
+
+#addAlbumButton .text {
+  position: relative;
+  z-index: 2;
+}
+
+#vueltaACasaJosh {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 100px;
+}

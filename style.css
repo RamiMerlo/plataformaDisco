@@ -230,6 +230,15 @@ header {
   width: fit-content;
 }
 
+#girasArtistas {
+  color: #00ff00;
+  letter-spacing: 1px;
+  font-weight: 600;
+  background: linear-gradient(to right, #00ff00, black 30%, black 70%, #00ff00);
+  text-align: center;
+  border: 5px solid black;
+}
+
 #albumPropio {
   margin-top: 30px;
   font-size: 30px;
