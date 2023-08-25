@@ -90,10 +90,9 @@ h1 {
 }
 
 .conteinerFecha:hover {
-  width: 150px;
-  height: 150px;
+  transform: scale(1.5);
   .fecha {
-    top: 50px;
+    top: 30px;
   }
 
   .lugar {
