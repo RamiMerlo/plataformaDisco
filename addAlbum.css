@@ -1,48 +1,158 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;600;700;800;900&display=swap%22");
 
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+@media screen and (max-height: 690px) {
+  body {
+    #logInForm {
+      margin-bottom: 30px;
+    }
+  }
+}
+
 body {
-  background-color: burlywood;
-
-  font-family: "Work Sans", sans-serif;
-}
-
-#albumRegister {
-  margin: 10vh auto 35vh auto;
-  width: 350px;
-  height: 450px;
-  background-color: #b4b4b4;
-  border: #6d6d6d solid 5px;
-  border-radius: 20px;
-  font-weight: bold;
+  background-color: black;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: "Work Sans", sans-serif;
   flex-direction: column;
-  padding: 5px;
-  font-size: 15px;
 }
 
-#albumRegister h1 {
-  margin-top: 5px;
-  margin-bottom: 25px;
+.ogH1 {
+  font-size: 45px;
+  margin-top: 50px;
   font-weight: bold;
-  text-decoration: underline orange;
-  padding-bottom: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Metal Mania", cursive;
 }
 
-#albumRegister input {
-  margin: 10px;
-  font-weight: bold;
-}
-
-#albumSubmit {
+#formContainer {
   position: relative;
-  top: -5px;
-  left: 132.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 150px;
+}
+
+#logInForm {
+  position: relative;
+  width: 80%;
+  max-width: 500px;
+  border: 2px transparent;
+  border-radius: 40px;
+  border-image: linear-gradient(45deg, #00ff00, #33ff33);
+  border-image-slice: 1;
+  box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00,
+    0 0 40px #00ff00;
+  margin-bottom: 30px;
+}
+form {
+  --bg-light: #efefef;
+  --bg-dark: #707070;
+  --clr: #58bc82;
+  --clr-alpha: #9c9c9c60;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.form .input-span {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-left: 40px;
+}
+
+#submitButton {
+  margin: 20px auto;
+}
+form input[type="text"] {
+  height: 30px;
+}
+form input[type="text"],
+form input[type="date"],
+form input[type="Terminos"],
+form textarea {
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem 0.75rem;
+  width: 50%;
+  max-width: 450px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--clr-alpha);
+  outline: 2px solid var(--bg-dark);
+}
+
+form input[type="text"]:focus,
+form input[type="date"]:focus,
+form input[type="Terminos"]:focus,
+form textarea:focus {
+  outline: 2px solid var(--clr);
+}
+
+.label {
+  align-self: flex-start;
+  color: var(--clr);
+  font-weight: 600;
+}
+
+form .submit {
+  padding: 1rem 0.75rem;
+  width: 100px;
+  display: block;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 3rem;
+  background-color: var(--bg-dark);
+  color: var(--bg-light);
+  border: none;
+  cursor: pointer;
+  transition: all 300ms;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+form .submit:hover {
+  background-color: #00ff00;
+  color: var(--bg-dark);
+  color: black;
+}
+
+.span {
+  text-decoration: none;
+  color: var(--bg-dark);
+  margin: 5px 20px;
+}
+
+.span a {
+  color: var(--clr);
+}
+
+#textTitulo {
+  margin-top: 10px;
+}
+
+textarea {
+  height: 50px;
+}
+
+#date,
+#Terminos,
+#Archivo {
+  color: #58bc82;
 }
