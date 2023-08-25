@@ -90,6 +90,7 @@ h1 {
 }
 
 .conteinerFecha:hover {
+  transition: width 0.3s, height 0.3s;
   transform: scale(1.5);
   .fecha {
     top: 30px;
