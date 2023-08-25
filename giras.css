@@ -86,11 +86,11 @@ h1 {
   background-color: #00ff00;
   box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00,
     0 0 40px #00ff00;
-  transition: width 0.3s, height 0.3s;
+  transition: width 3s, height 3s;
 }
 
 .conteinerFecha:hover {
-  transition: width 0.3s, height 0.3s;
+  transition: width 3s, height 3s;
   transform: scale(1.5);
   .fecha {
     top: 30px;
