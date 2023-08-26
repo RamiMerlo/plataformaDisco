@@ -7,6 +7,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --transition: all 0.4s ease-in-out;
+}
 @media screen and (max-width: 881px) {
   body {
     #fechasGira {
@@ -86,17 +89,19 @@ h1 {
   background-color: #00ff00;
   box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00,
     0 0 40px #00ff00;
-  transition: width 3s, height 3s;
+  transition: var(--transition);
 }
 
 .conteinerFecha:hover {
-  transition: width 3s, height 3s;
+  transition: var(--transition);
   transform: scale(1.5);
   .fecha {
+    transition: var(--transition);
     top: 30px;
   }
 
   .lugar {
+    transition: var(--transition);
     top: 15px;
   }
 }
@@ -105,10 +110,12 @@ h1 {
   position: relative;
   top: 25px;
   font-size: 30px;
+  transition: var(--transition);
 }
 .lugar {
   position: relative;
   top: 5px;
+  transition: var(--transition);
 }
 a {
   text-decoration: none;
@@ -167,4 +174,5 @@ a {
   color: white;
   text-align: center;
   font-size: 25px;
+  margin: 20px;
 }
