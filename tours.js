@@ -1,13 +1,18 @@
-let nombre, edad
+let nombre,
+  edad = ""
 let nombreValido = false
 let nombreNuevo
 do {
-  nombre = prompt("Como te llamas?")
+  if (nombreValido == false) {
+    nombre = prompt("Como te llamas?")
+    console.log(nombre)
+  }
   if (nombre === "") {
     nombre = String(prompt("Debe ingresar un nombre valido."))
   } else if (nombre.length <= 2) {
     nombre = String(prompt("Debe ingresar un nombre mas largo."))
-  } else {
+  }
+  if (nombre.length > 2 && nombre != "") {
     nombreValido = true
   }
 } while (nombreValido == false)
