@@ -162,3 +162,9 @@ a {
   justify-content: center;
   top: 100px;
 }
+
+#sugerenciaTicket {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
