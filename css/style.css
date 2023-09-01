@@ -380,8 +380,8 @@ header {
   outline: none;
   overflow: hidden;
   color: white;
-  -webkit-transition: color 1s 0.1s ease-out;
-  transition: color 1s 0.1s ease-out;
+  -webkit-transition: color 0.3s 0.1s ease-out;
+  transition: color 0.3s 0.1s ease-out;
   text-align: center;
 }
 
@@ -441,8 +441,8 @@ header {
   outline: none;
   overflow: hidden;
   color: white;
-  -webkit-transition: color 1s 0.1s ease-out;
-  transition: color 1s 0.1s ease-out;
+  -webkit-transition: color 0.3s 0.1s ease-out;
+  transition: color 0.3s 0.1s ease-out;
   text-align: center;
   width: 155.8px;
   height: 59.5px;
@@ -509,8 +509,8 @@ header {
   outline: none;
   overflow: hidden;
   color: white;
-  -webkit-transition: color 1s 0.1s ease-out;
-  transition: color 1s 0.1s ease-out;
+  -webkit-transition: color 0.3s 0.1s ease-out;
+  transition: color 0.3s 0.1s ease-out;
   text-align: center;
 }
 
@@ -548,7 +548,7 @@ header {
 
 #githubIcon:hover svg {
   fill: black;
-  transition: fill 1s 0.1s ease;
+  transition: fill 0.3s 0.1s ease;
 }
 
 #githubIcon:hover::before {
@@ -577,8 +577,8 @@ header {
   outline: none;
   overflow: hidden;
   color: white;
-  -webkit-transition: color 1s 0.1s ease-out;
-  transition: color 1s 0.1s ease-out;
+  -webkit-transition: color 0.3s 0.1s ease-out;
+  transition: color 0.3s 0.1s ease-out;
   text-align: center;
 }
 
@@ -636,7 +636,7 @@ svg {
 
 #whatsappIcon:hover svg {
   fill: black;
-  transition: fill 1s 0.1s ease;
+  transition: fill 0.3s 0.1s ease;
 }
 
 a {
@@ -728,7 +728,7 @@ a {
 }
 
 #registerButton.animated #circleRegister {
-  animation: pulse 1s infinite;
+  animation: pulse 0.3s infinite;
 }
 #addAlbumButton {
   position: relative;
@@ -808,7 +808,7 @@ a {
 }
 
 #addAlbumButton.animated #circleRegister {
-  animation: pulse 1s infinite;
+  animation: pulse 0.3s infinite;
 }
 
 @keyframes pulse {

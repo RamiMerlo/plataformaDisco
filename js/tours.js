@@ -27,4 +27,5 @@ if (nombreValido == true) {
   )
 }
 
+swal(`Entendido, ${nombreNuevo}`, "", "success")
 miH5.textContent = `${nombreNuevo}, te recomendamos estas fechas`
