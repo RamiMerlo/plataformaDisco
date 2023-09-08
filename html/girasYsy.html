@@ -12,32 +12,21 @@
     <h5 id="sugerenciaTicket">.</h5>
     <div id="fechasGira">
       <div id="fechasFila1">
-        <a
-          href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwj7qYDrr_aAAxXGLtQBHdj-BCcYABABGgJvYQ&ase=2&gclid=Cj0KCQjw_5unBhCMARIsACZyzS0bD2ZuIyvITbAS04OUp_GkOg2Zb5lGwtDCWw_VRpJmXIy8JJFJHMIaAoAJEALw_wcB&ohost=www.google.com&cid=CAESauD2BWuBfswnt2tpemY5MfT8YHmwJxWkeAdlaiAQckPZabNmZ7nOMLlWY4pDzRmuzAY6O82jFONsQHPY8S-oYE-Sva8Fte9uR4dEbaZsXUg4wJC_kM47YCNQbfIwcpFd5dXx7PEVaZVfgbQ&sig=AOD64_2xVc7W5AHpEJ7Zp9cre47OcWrmOw&nis=4&adurl&ved=2ahUKEwiewPTqr_aAAxUwppUCHeozDW8QqyQoAHoECA0QDQ"
-          target="_blank"
-          ><div class="conteinerFecha">
+        
+          <div class="conteinerFecha" id="Valencia" onclick="getTickets(`Valencia`)">
             <span class="lugar">Valencia</span> <br />
             <span class="fecha">29/09</span>
-          </div></a
-        >
-        <a
-          href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwj7qYDrr_aAAxXGLtQBHdj-BCcYABADGgJvYQ&ase=2&gclid=Cj0KCQjw_5unBhCMARIsACZyzS18NW6wQD1BwuBYAIe5XFJMqV3HIsk2sDdX_6GakNMJOTETdVf7frQaArXlEALw_wcB&ohost=www.google.com&cid=CAESauD2BWuBfswnt2tpemY5MfT8YHmwJxWkeAdlaiAQckPZabNmZ7nOMLlWY4pDzRmuzAY6O82jFONsQHPY8S-oYE-Sva8Fte9uR4dEbaZsXUg4wJC_kM47YCNQbfIwcpFd5dXx7PEVaZVfgbQ&sig=AOD64_1n76bWOFUCzSleShRuwb8q5E4Hcw&nis=4&adurl&ved=2ahUKEwiewPTqr_aAAxUwppUCHeozDW8QqyQoAnoECA0QDw"
-          target="_blank"
-          ><div class="conteinerFecha">
+          </div>
+        <div class="conteinerFecha"  onclick="getTickets(`Barcelona`)">
             <span class="lugar"> Barcelona </span> <br />
-            <span class="fecha"> 28/09 </span>
-          </div></a
-        >
+            <span class="fecha" id="Barcelona"> 28/09 </span>
+          </div>
       </div>
       <div id="fechasFila2">
-        <a
-          href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwj7qYDrr_aAAxXGLtQBHdj-BCcYABADGgJvYQ&ase=2&gclid=Cj0KCQjw_5unBhCMARIsACZyzS18NW6wQD1BwuBYAIe5XFJMqV3HIsk2sDdX_6GakNMJOTETdVf7frQaArXlEALw_wcB&ohost=www.google.com&cid=CAESauD2BWuBfswnt2tpemY5MfT8YHmwJxWkeAdlaiAQckPZabNmZ7nOMLlWY4pDzRmuzAY6O82jFONsQHPY8S-oYE-Sva8Fte9uR4dEbaZsXUg4wJC_kM47YCNQbfIwcpFd5dXx7PEVaZVfgbQ&sig=AOD64_1n76bWOFUCzSleShRuwb8q5E4Hcw&nis=4&adurl&ved=2ahUKEwiewPTqr_aAAxUwppUCHeozDW8QqyQoAnoECA0QDw"
-          target="_blank"
-          ><div class="conteinerFecha">
+        <div class="conteinerFecha" id="CDMX" onclick="getTickets(`CDMX`)">
             <span class="lugar">CDMX</span> <br />
             <span class="fecha">02/09</span>
-          </div></a
-        >
+          </div>
       </div>
     </div><div id="vueltaACasaJosh">
     <a href="../index.html">
@@ -50,6 +39,6 @@
     </div>
   </a></div>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="../js/tours.js"></script>
+    <script src="../js/toursYsy.js"></script>
   </body>
 </html>
