@@ -108,8 +108,8 @@ h1 {
 
 .fecha {
   position: relative;
-  top: 25px;
-  font-size: 30px;
+  top: 20px;
+  font-size: 23px;
   transition: var(--transition);
 }
 .lugar {

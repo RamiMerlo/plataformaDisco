@@ -1,7 +1,9 @@
 let nombre
-let edad = ""
 let nombreValido = false
 let nombreNuevo
+
+let edad = prompt("Cuantos años tenes?")
+
 while (nombre == null) {
   do {
     if (nombreValido == false) {
