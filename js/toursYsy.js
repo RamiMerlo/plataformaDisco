@@ -1,9 +1,24 @@
 let nombre
 let nombreValido = false
 let nombreNuevo
+let edadValida = false
 
-let edad = prompt("Cuantos años tenes?")
-
+let edadUsuario = parseInt(prompt("Ingrese su edad."))
+const botones = document.querySelectorAll(".conteinerFecha")
+const textoBoton = document.querySelectorAll(".fecha")
+if (edadUsuario < 18) {
+  swal(
+    "¡Vaya! Parece que eres menor de edad",
+    "No podrás adquirir estos tickets.",
+    "info"
+  )
+  for (let i = 0; i < botones.length; i++) {
+    botones[i].setAttribute("disabled", "disabled")
+    textoBoton[i].textContent = "❌"
+  }
+} else {
+  edadValida = true
+}
 while (nombre == null) {
   do {
     if (nombreValido == false) {
@@ -31,7 +46,6 @@ if (nombreValido == true) {
   )
 }
 
-swal(`Entendido, ${nombreNuevo}`, "", "success")
 miH5.textContent = `${nombreNuevo}, te recomendamos estas fechas`
 
 let tickets = {
@@ -42,12 +56,13 @@ let tickets = {
 
 function getTickets(place) {
   disableSoldOutButtons(tickets)
-  if (tickets[place] > 0) {
+  if (tickets[place] > 0 && edadValida == true) {
     swal("Sold!", `You have tickets to the ${place} concert`, "success")
     tickets[place]--
     if (tickets[place] == 0) {
       disableSoldOutButtons(place)
     }
+  } else if (edadValida == false) {
   } else {
     swal(
       "Oh no!",
