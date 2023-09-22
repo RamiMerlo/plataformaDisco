@@ -4,11 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Musica Argentina</title>
-    <link rel="icon" type="image/png" href="./images/logo.jpg" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    
+    <link rel="icon" type="image/png" href="./images/logo.jpg" />  
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">  
     <link rel="stylesheet" href="./css/style.css" /> 
-  </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">  </head>
   <body>
 <div id="registerContainer">
     <header> <a href="./html/logIn.html">
@@ -19,14 +18,16 @@
       </div>
     </button></a></header></div>
     <!-- <div id="titulitoPlaceHolder" class="ogDivs"></div> -->
+    <div class="navbar navbar-light" id="nav">
+          <i class="ri-menu-line" id="navImage"></i>
+          <label for="" class="navItems"><img src="" alt="error" style="width: 50px; height: 50px;border: 3px solid #ffffff; border-radius: 40px;" class="navItems"> <span class="navItems" id="nickName">Usuario</span></label>
+          <h2></h2>
+          <h2></h2>
+          <a href="#contacto">
+          <footer class="navItems">Contacto</footer>
+        </a>
+      </div>
     <div id="Titulito" class="ogDivs" >
-      <nav class="navbar navbar-light bg-light" id="nav" style="--bs-bg-opacity: 0;">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="./images/todoNav.png" alt="" width="30" height="24" id="navImage">
-          </a>
-        </div>
-      </nav>
       <h1 class="ogH1">Musica urbana argentina</h1>
     </div>
     <h2 class="ogH2">Grandes referentes </h2> 
@@ -104,6 +105,6 @@
     </button></a>
   </div>
     </div>
-    <script src="../js/index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
