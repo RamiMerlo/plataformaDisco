@@ -67,7 +67,7 @@ form {
   width: 100%;
 }
 
-.form .input-span {
+#formulario .input-span {
   width: 100%;
   display: flex;
   flex-direction: column;

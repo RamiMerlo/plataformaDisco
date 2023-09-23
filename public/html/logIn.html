@@ -11,7 +11,7 @@
     <h1 class="ogH1">Iniciar Sesion</h1>
     <div id="formContainer">
       <div id="logInForm">
-        <form class="form">
+        <form id="formulario">
           <span class="input-span">
             <label for="email" class="label">Email</label>
             <input type="email" name="email" id="email"
@@ -21,7 +21,8 @@
             <input type="password" name="password" id="password"
           /></span>
           <span class="span"><a href="#">Olvidaste tu contraseña?</a></span>
-          <input class="submit" type="submit" value="Enviar" />
+          <button type="submit" class="submit">Enviar</button>
+          <span id="submitaaea" style="color: white">aaaaaaaa</span>
           <span class="span" id="submitButton"
             >Todavia no tenes cuenta?
             <a href="./signUp.html">Crear una cuenta</a></span
@@ -29,5 +30,7 @@
         </form>
       </div>
     </div>
+    <script src="../js/logIn.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </body>
 </html>
