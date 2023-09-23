@@ -11,7 +11,7 @@ router.post("/Usuario", async (req, res) => {
   }
 })
 
-router.get("/Usuario", async (req, res) => {
+router.get("/Usuario/todos", async (req, res) => {
   try {
     const usuarios = await Usuario.find()
     if (usuarios.length) {

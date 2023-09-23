@@ -1,26 +1,39 @@
-let submit = document.querySelector("#submitaaea")
+let submit = document.querySelector("#submitted")
 let email = document.querySelector("#email")
 let password = document.querySelector("#password")
 let valorEmail, valorPassword
+let done = false
 
-const mongoose = require("mongoose")
-mongoose.connect(
-  "mongodb+srv://ramimerlo31:Legolass3110@ramimerlo.ekatfox.mongodb.net/?retryWrites=true&w=majority"
-)
-const Usuario = mongoose.model("Usuario", {
-  nombre: String,
-  apellido: String,
-  email: String,
-  contrasenia: String,
-  foto: String,
-})
+const renderUsers = (user) => {
+  let urlPortada = user.portada ? user.portada : "../images/user.png.png"
+  console.log(urlPortada)
+}
 
-for (const key in Usuario) {
-  console.log(key)
+const getUsers = async () => {
+  try {
+    const response = await axios.get("http://localhost:3000/Usuario/todos")
+    response.data.Usuarios.map((user) => {
+      if (user.email === email.value && user.contrasenia === password.value) {
+        const usuario = {
+          nombre: user.nombre,
+          apellido: user.apellido,
+          email: user.email,
+          contrasenia: user.contrasenia,
+          foto: user.foto,
+        }
+
+        localStorage.setItem("usuario", JSON.stringify(usuario))
+        done = true
+      }
+    })
+  } catch (error) {
+    console.log(error)
+  }
 }
 
 submit.addEventListener("click", async () => {
-  let valorEmail = email.value
-  let valorPassword = password.value
-  console.log(valorPassword, valorEmail)
+  await getUsers()
+  if (done) {
+    window.location.href = "../index.html"
+  }
 })

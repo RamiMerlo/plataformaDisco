@@ -119,6 +119,7 @@ form .submit {
   transition: all 300ms;
   font-weight: 600;
   font-size: 0.9rem;
+  text-align: center;
 }
 
 form .submit:hover {
