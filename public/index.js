@@ -8,7 +8,7 @@ const usuarioGuardado = localStorage.getItem("usuario")
 
 const usuarioObject = JSON.parse(usuarioGuardado)
 
-usuarioFront.textContent = usuarioObject.nombre
+usuarioFront.textContent = usuarioObject.nombre + " " + usuarioObject.apellido
 
 let fotoBack = usuarioObject.foto
   ? usuarioObject.foto

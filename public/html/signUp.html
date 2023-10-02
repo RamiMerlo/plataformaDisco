@@ -10,7 +10,7 @@
   <body>
     <div id="divRegister">
       <h1 id="registroH1">Registro</h1>
-      <form action="https://formsubmit.co/ramimerlo31@gmail.com" method="post">
+      <form id="formulario">
         <label for="Nombre"
           >Nombre
           <input type="text" id="signUpName" name="Nombre" required />
@@ -46,15 +46,14 @@
             required
         /></label>
         <br />
-        <label for="profileImg"
-          >Foto (link) <input type="url" required
+        <label
+          >Foto (link) <input type="url" id="profileImage" required
         /></label>
-        <a href="./signedUp.html"
-          ><input type="submit" class="signUpData" id="submitSignUpData"
-        /></a>
+        <span class="submit" id="submitted">Enviar</span>
         <br />
       </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/signUp.js"></script>
   </body>
 </html>

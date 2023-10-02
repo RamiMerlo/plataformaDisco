@@ -1,11 +1,16 @@
-let nombre
+const usuarioGuardado = localStorage.getItem("usuario")
+const usuarioObject = JSON.parse(usuarioGuardado)
+
+let nombre = usuarioObject.nombre
 let nombreValido = false
 let nombreNuevo
 let edadValida = false
 
-let edadUsuario = parseInt(prompt("Ingrese su edad."))
 const botones = document.querySelectorAll(".conteinerFecha")
 const textoBoton = document.querySelectorAll(".fecha")
+
+let edadUsuario = parseInt(prompt("Ingrese su edad."))
+
 if (edadUsuario < 18) {
   swal(
     "¡Vaya! Parece que eres menor de edad",
@@ -19,34 +24,10 @@ if (edadUsuario < 18) {
 } else {
   edadValida = true
 }
-while (nombre == null) {
-  do {
-    if (nombreValido == false) {
-      nombre = prompt("Como te llamas?")
-      console.log(nombre)
-    }
-    if (nombre === "") {
-      nombre = String(prompt("Debe ingresar un nombre valido."))
-    } else if (nombre.length <= 2) {
-      nombre = String(prompt("Debe ingresar un nombre mas largo."))
-    }
-    if (nombre.length > 2 && nombre != "") {
-      nombreValido = true
-    }
-  } while (nombreValido == false)
-}
+
 let miH5 = document.querySelector("#sugerenciaTicket")
 
-if (nombreValido == true) {
-  const primeraLetra = nombre.charAt(0)
-  const restoDelNombre = nombre.slice(1)
-
-  nombreNuevo = String(
-    primeraLetra.toUpperCase() + restoDelNombre.toLowerCase()
-  )
-}
-
-miH5.textContent = `${nombreNuevo}, te recomendamos estas fechas`
+miH5.textContent = `${nombre}, te recomendamos estas fechas`
 
 let tickets = {
   CDMX: 3,

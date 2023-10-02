@@ -35,5 +35,7 @@ submit.addEventListener("click", async () => {
   await getUsers()
   if (done) {
     window.location.href = "../index.html"
+  } else {
+    alert("Mail y/o contraseña incorrecto/s")
   }
 })

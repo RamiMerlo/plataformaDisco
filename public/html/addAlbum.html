@@ -17,13 +17,13 @@
         >
           <span class="input-span">
             <label for="text" class="label" id="textTitulo">Titulo</label
-            ><input type="text" name="Titulo" id="text" required
+            ><input type="text" name="Titulo" id="titulo" required
           /></span>
           <span class="input-span">
             <label for="textarea" class="label">Descripcion</label>
             <textarea
               name="Descripcion"
-              id="textarea"
+              id="descripcion"
               cols="30"
               rows="10"
               style="resize: none"
@@ -31,18 +31,17 @@
           </span>
           <span class="input-span">
             <label for="date" class="date" id="date">Fecha de lanzamiento</label
-            ><input type="date" name="Fecha" required
+            ><input type="date" name="Fecha" id="fecha"
+          /></span>
+          <span class="input-span">
+            <label for="portada" class="portada" id="portada"> Portada</label>
+            <input type="portada" required name="portada"
           /></span>
           <span class="input-span">
             <label for="Terminos" class="Terminos" id="Terminos">
               Esta de acuerdo con los
               <a href="./Terminos.html">Terminos y condiciones?</a>
-              <input type="checkbox" required="" name="Terminos" /></label
-          ></span>
-          <span class="input-span">
-            <label for="Archivo" class="Archivo" id="Archivo">
-              Seleccionar portada
-              <input type="file" required name="Archivo" /></label
+              <input type="checkbox" required name="Terminos" /></label
           ></span>
           <input
             class="submit"
@@ -54,5 +53,6 @@
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/addAlbum.js"></script>
   </body>
 </html>
