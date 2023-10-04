@@ -1,7 +1,7 @@
 let titulo = document.querySelector("#titulo")
 let descripcion = document.querySelector("#descripcion")
 let fecha = document.querySelector("#fecha")
-let portada = document.querySelector("#portada")
+let portada = document.querySelector("#portadaValue")
 let submit = document.querySelector("#submitButton")
 let done = false
 

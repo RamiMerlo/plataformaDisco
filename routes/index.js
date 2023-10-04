@@ -33,7 +33,11 @@ router.delete("/Usuario/:id", async (req, res) => {
     res.status(500).send("Error del servidor")
   }
 })
-
+//
+//
+//
+//
+//
 router.post("/album/agregar", async (req, res) => {
   try {
     let album = await Album.create(req.body)

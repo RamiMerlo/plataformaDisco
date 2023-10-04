@@ -8,9 +8,8 @@ const Album = new mongoose.Schema({
     min: 5,
     max: 200,
   },
-  anioLanzamiento: {
+  fecha: {
     type: String,
-    required: [true, "la fecha de lanzamiento es requerida"],
     min: 1,
   },
   canciones: [

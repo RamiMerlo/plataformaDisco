@@ -11,10 +11,7 @@
     <h1 class="ogH1">Nuevo Album</h1>
     <div id="formContainer">
       <div id="logInForm">
-        <form
-          action="https://formsubmit.co/ramimerlo31@gmail.com"
-          method="post"
-        >
+        <form>
           <span class="input-span">
             <label for="text" class="label" id="textTitulo">Titulo</label
             ><input type="text" name="Titulo" id="titulo" required
@@ -35,7 +32,7 @@
           /></span>
           <span class="input-span">
             <label for="portada" class="portada" id="portada"> Portada</label>
-            <input type="portada" required name="portada"
+            <input type="portada" id="portadaValue" required name="portada"
           /></span>
           <span class="input-span">
             <label for="Terminos" class="Terminos" id="Terminos">
@@ -43,12 +40,14 @@
               <a href="./Terminos.html">Terminos y condiciones?</a>
               <input type="checkbox" required name="Terminos" /></label
           ></span>
-          <input
+          <span
             class="submit"
             type="submit"
             value="Enviar"
             id="submitButton"
-          />
+            style="text-align: center"
+            >Enviar</span
+          >
         </form>
       </div>
     </div>
