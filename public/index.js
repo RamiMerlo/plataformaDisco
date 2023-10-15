@@ -3,6 +3,7 @@ let navImg = document.querySelector("#navImage")
 let items = document.querySelectorAll(".navItems")
 let usuarioFront = document.querySelector("#nickName")
 let fotoFront = document.querySelector("#fotoUser")
+let logoutButton = document.querySelector("#logoutButton")
 
 const usuarioGuardado = localStorage.getItem("usuario")
 
@@ -21,4 +22,8 @@ navImg.addEventListener("click", () => {
   items.forEach((item) => {
     item.classList.toggle("nav-items-toggled")
   })
+})
+
+logoutButton.addEventListener("click", async () => {
+  localStorage.removeItem("usuario")
 })

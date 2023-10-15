@@ -3,6 +3,8 @@ const router = express.Router()
 const Usuario = require("../models/users.js")
 const Album = require("../models/albums.js")
 
+app.use("/health", (req, res) => res.sendStatus(200))
+
 router.post("/Usuario", async (req, res) => {
   try {
     await Usuario.create(req.body)

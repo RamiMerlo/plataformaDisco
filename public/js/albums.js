@@ -5,33 +5,50 @@ const divAlbums = document.querySelector(".albums")
 
 const renderAlbums = (album) => {
   const div = document.createElement("div")
+  const albumTitle = document.createElement("h2")
+  const albumDate = document.createElement("h2")
   const imgAlbum = document.createElement("img")
   const iconTrash = document.createElement("img")
+  const addSongIcon = document.createElement("i")
+  const editAlbumIcon = document.createElement("i")
   const listDiv = document.createElement("div")
-  const addSongIcon = document.createElement("img")
   console.log(album)
-  div.classList.add("albums-individual")
   let urlPortada = album.portada
     ? album.portada
     : "https://imgur.com/0uSALUr.png"
+  div.classList.add("albums-individual")
+  let albumId = album._id ? album._id : ""
+  let linkAlbum = album.link ? album.link : ""
   imgAlbum.setAttribute("src", urlPortada)
   iconTrash.setAttribute("src", "../images/trashy.png")
-  addSongIcon.setAttribute(
-    "src",
-    "https://cdn.discordapp.com/attachments/672939400799453215/1161386687147016374/imagen_2023-10-10_163549874-removebg-preview.png?ex=65381ca3&is=6525a7a3&hm=0a25bb9365a3617d138950280881eca9dc033aeb6fc9fcdb9df3a6afe46a13ef&"
-  )
+  addSongIcon.classList.add("ri-music-2-fill")
   addSongIcon.classList.add("addCustom")
+  editAlbumIcon.classList.add("ri-settings-5-fill")
+  editAlbumIcon.classList.add("editCustom")
   iconTrash.classList.add("trashCustom")
   listDiv.classList.add("listDiv")
+
+  albumTitle.textContent = album.titulo
+  albumDate.textContent = album.fecha
+  div.appendChild(albumTitle)
+  div.appendChild(albumDate)
   div.appendChild(imgAlbum)
   div.appendChild(iconTrash)
+  div.appendChild(addSongIcon)
+  div.appendChild(editAlbumIcon)
   div.appendChild(listDiv)
-  listDiv.appendChild(addSongIcon)
   divAlbums.appendChild(div)
 
-  if (album["canciones"].length != 0) {
-    renderSongs(album, listDiv)
-  }
+  addSongIcon.addEventListener("click", (album) => {
+    window.location.href = linkAlbum
+  })
+
+  editAlbumIcon.addEventListener("click", () => {
+    localStorage.setItem("albumId", JSON.stringify(albumId))
+    window.location.href = "./editAlbum.html"
+  })
+
+  renderSongs(album, listDiv)
 }
 
 const getAlbums = async () => {
@@ -74,10 +91,8 @@ const deleteAlbum = async (album) => {
 }
 
 const renderSongs = (album, listDiv) => {
-  for (let index = 0; index < album.canciones.length; index++) {
-    const songList = document.createElement("p")
-    songList.classList.add("songEach")
-    songList.textContent = album.canciones[index].titulo
-    listDiv.appendChild(songList)
-  }
+  const songList = document.createElement("p")
+  songList.classList.add("songEach")
+  songList.textContent = album.descripcion
+  listDiv.appendChild(songList)
 }

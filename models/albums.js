@@ -11,15 +11,10 @@ const Album = new mongoose.Schema({
   fecha: {
     type: String,
     min: 1,
+    required: [true, "la fecha es requerida"],
   },
-  canciones: [
-    {
-      titulo: { type: String },
-      duracion: { type: String },
-      link: { type: String },
-    },
-  ],
-  portada: { type: String },
+  link: { type: String, required: [true, "el link es requerido"] },
+  portada: { type: String, required: [true, "la portada es requerida"] },
 })
 
 module.exports = mongoose.model("Album", Album)

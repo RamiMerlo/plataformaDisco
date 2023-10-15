@@ -6,6 +6,10 @@ let portada = document.querySelector("#portadaValue")
 let submit = document.querySelector("#submitButton")
 let done = false
 
+const idGuardado = localStorage.getItem("albumId")
+
+const idBack = JSON.parse(idGuardado)
+
 const newAlbum = async () => {
   if (
     titulo.value != "" &&
@@ -23,7 +27,7 @@ const newAlbum = async () => {
         portada: portada.value,
       }
 
-      axios.post("/album/agregar", album, {
+      axios.put(`/album/${idBack}`, album, {
         headers: {
           "Content-Type": "application/json",
         },
