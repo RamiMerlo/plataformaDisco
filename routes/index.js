@@ -3,6 +3,9 @@ const router = express.Router()
 const Usuario = require("../models/users.js")
 const Album = require("../models/albums.js")
 const app = express()
+const cors = require("cors")
+
+app.use(cors())
 
 app.get("/health", (req, res) => {
   res.status(200).send("OK")
