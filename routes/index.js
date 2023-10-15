@@ -2,6 +2,7 @@ const express = require("express")
 const router = express.Router()
 const Usuario = require("../models/users.js")
 const Album = require("../models/albums.js")
+const app = express()
 
 app.use("/health", (req, res) => res.sendStatus(200))
 
