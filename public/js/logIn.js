@@ -11,7 +11,7 @@ const renderUsers = (user) => {
 
 const getUsers = async () => {
   try {
-    const response = await axios.get("http://localhost:3000/Usuario/todos")
+    const response = await axios.get("../Usuario/todos")
     response.data.Usuarios.map((user) => {
       if (user.email === email.value && user.contrasenia === password.value) {
         const usuario = {
